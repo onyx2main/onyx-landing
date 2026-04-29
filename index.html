@@ -19,7 +19,6 @@ body{
   text-align:center;
 }
 
-/* LOGO */
 .logo{
   background:#000;
   padding:8px 0;
@@ -29,7 +28,6 @@ body{
   width:110px;
 }
 
-/* HERO SLIDER */
 .hero{
   position:relative;
   width:100%;
@@ -51,7 +49,6 @@ body{
   opacity:1;
 }
 
-/* PC IMAGE */
 .slide1{
   background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/Artboard%208.png');
 }
@@ -64,7 +61,6 @@ body{
   background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/VIP.png');
 }
 
-/* SECTION */
 .section{
   padding:45px 20px 70px;
 }
@@ -74,7 +70,6 @@ body{
   margin-bottom:35px;
 }
 
-/* ICONS */
 .icons{
   display:flex;
   justify-content:center;
@@ -87,13 +82,13 @@ body{
   color:white;
   font-weight:bold;
   transition:0.3s;
+  cursor:pointer;
 }
 
 .item:hover{
   transform:scale(1.06);
 }
 
-/* ICON WRAP */
 .icon-wrap{
   width:74px;
   height:74px;
@@ -144,7 +139,6 @@ body{
   font-size:15px;
 }
 
-/* COLORS */
 .sg{
   --glow-soft:rgba(255,70,70,0.65);
   --glow-light:rgba(255,70,70,0.35);
@@ -169,7 +163,6 @@ body{
   --glow-faint:rgba(0,180,255,0.22);
 }
 
-/* ANIMATION */
 @keyframes pulseGlow{
   0%,100%{
     transform:scale(1);
@@ -194,7 +187,6 @@ body{
   }
 }
 
-/* HOVER 更亮 */
 .item:hover .icon-wrap::before{
   box-shadow:
     0 0 8px rgba(255,255,255,1),
@@ -206,20 +198,75 @@ body{
   opacity:0.9;
 }
 
-/* TEXT */
 .usdt{
   margin-top:40px;
   font-size:16px;
 }
 
-/* TABLET */
+/* POPUP */
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.82);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+}
+
+.popup-box{
+  background:#222;
+  border:1px solid rgba #ff6200;
+  box-shadow:0 0 25px rgba(255,98,0,0.4);
+  padding:25px 20px;
+  border-radius:16px;
+  width:320px;
+  max-width:90%;
+  text-align:center;
+}
+
+.popup-box h3{
+  margin-bottom:18px;
+  color:#ff6200;
+  font-size:22px;
+}
+
+.popup-box a{
+  display:block;
+  margin:12px 0;
+  padding:12px;
+  background:linear-gradient(135deg,#ff7a1a,#ff6200);
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+.popup-box a:hover{
+  transform:scale(1.03);
+}
+
+.popup-box button{
+  margin-top:12px;
+  padding:10px 20px;
+  border:none;
+  background:#555;
+  color:#fff;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.popup-box button:hover{
+  background:#777;
+}
+
 @media(max-width:1024px){
   .hero{
     height:320px;
   }
 }
 
-/* MOBILE */
 @media(max-width:768px){
   .logo img{
     width:95px;
@@ -229,7 +276,6 @@ body{
     height:260px;
   }
 
-  /* MOBILE IMAGE - 这里换你的手机版图 */
   .slide1{
     background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/Artboard%208%20mob.png');
   }
@@ -252,7 +298,11 @@ body{
   }
 
   .icons{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
     gap:25px;
+    max-width:280px;
+    margin:auto;
   }
 
   .icon-wrap{
@@ -275,7 +325,6 @@ body{
   }
 }
 
-/* SMALL MOBILE */
 @media(max-width:480px){
   .hero{
     height:220px;
@@ -298,7 +347,6 @@ body{
   <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyxlogo/logo.png" alt="Onyx2play Logo">
 </div>
 
-<!-- HERO SLIDER -->
 <div class="hero">
   <div class="slide slide1 active"></div>
   <div class="slide slide2"></div>
@@ -310,30 +358,30 @@ body{
 
   <div class="icons">
 
-    <a class="item sg" href="https://onyx2boom.com/web/index" target="_blank">
+    <div class="item sg" onclick="showBackup('SG')">
       <div class="icon-wrap">
-        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/sg.png" alt="Singapore">
+        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/sg.png">
       </div>
       <p>Singapore</p>
-    </a>
+    </div>
 
-    <a class="item my" href="https://onyx2boleh.com/web/index" target="_blank">
+    <div class="item my" onclick="showBackup('MY')">
       <div class="icon-wrap">
-        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/malaysia.png" alt="Malaysia">
+        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/malaysia.png">
       </div>
       <p>Malaysia</p>
-    </a>
+    </div>
 
     <a class="item fb" href="https://www.facebook.com/o2psg" target="_blank">
       <div class="icon-wrap">
-        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/facebook.png" alt="Facebook">
+        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/facebook.png">
       </div>
       <p>Facebook</p>
     </a>
 
     <a class="item tg" href="https://t.me/o2play4k" target="_blank">
       <div class="icon-wrap">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
       </div>
       <p>Telegram</p>
     </a>
@@ -345,15 +393,65 @@ body{
   </div>
 </div>
 
+<div class="popup" id="popup" onclick="closePopupOutside(event)">
+  <div class="popup-box" id="popupContent"></div>
+</div>
+
 <script>
 let slides = document.querySelectorAll('.slide');
-let index = 0;
+let i = 0;
 
-setInterval(()=>{
-  slides[index].classList.remove('active');
-  index = (index + 1) % slides.length;
-  slides[index].classList.add('active');
+setInterval(() => {
+  slides[i].classList.remove('active');
+  i = (i + 1) % slides.length;
+  slides[i].classList.add('active');
 }, 3000);
+
+
+/* 这里换成你的真实备用链接 */
+const backups = {
+  SG: [
+    "http://onyx2wow.com",
+    "http://onyx2gem.com",
+    "http://onyx2boom.com",
+    "http://onyx2me.com",
+    "http://onyx2we.com",
+    "http://onyx2bk.com"
+  ],
+
+  MY: [
+    "http://onyx2boleh.com",
+    "http://onyx2bola.com",
+    "http://onyx2jom.com"
+  ]
+};
+
+function showBackup(country){
+  let list = backups[country];
+
+  let countryName = country === "SG" ? "Singapore" : "Malaysia";
+
+  let html = `<h3>${countryName} Backup Links</h3>`;
+
+  list.forEach((url, index) => {
+    html += `<a href="${url}" target="_blank">Line ${index + 1}</a>`;
+  });
+
+  html += `<button onclick="closePopup()">Close</button>`;
+
+  document.getElementById("popupContent").innerHTML = html;
+  document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+
+function closePopupOutside(event){
+  if(event.target.id === "popup"){
+    closePopup();
+  }
+}
 </script>
 
 </body>
