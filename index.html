@@ -5,533 +5,399 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Onyx2play Official Access | Malaysia & Singapore Online Gaming</title>
-<meta name="description" content="Onyx2play official access page for Malaysia and Singapore players. Select your country to access the latest available links, Facebook and Telegram support.">
-<meta name="keywords" content="Onyx2play, Onyx2play Malaysia, Onyx2play Singapore, online gaming, sportsbook, live casino, slots, racing, USDT">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://onyx2playregister.github.io/onyx-landing/">
-<link rel="icon" href="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyxlogo/logo.png">
 
-<meta property="og:title" content="Onyx2play Official Access">
-<meta property="og:description" content="Malaysia & Singapore access page for Onyx2play players.">
-<meta property="og:image" content="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyxlogo/logo.png">
-<meta property="og:url" content="https://onyx2playregister.github.io/onyx-landing/">
-<meta property="og:type" content="website">
+<meta name="description" content="Onyx2play official access page for Malaysia and Singapore players.">
+<meta name="keywords" content="Onyx2play, Malaysia, Singapore, sportsbook, casino">
+
+<link rel="canonical" href="https://onyx2playregister.github.io/onyx-landing/">
+
+<link rel="icon" href="images/logo.png">
 
 <style>
+
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-  background:#1b1b1b;
-  color:white;
-  text-align:center;
+    background:#1b1b1b;
+    color:#fff;
+    text-align:center;
 }
 
 .logo{
-  background:#000;
-  padding:8px 0;
+    background:#000;
+    padding:10px 0;
 }
 
 .logo img{
-  width:110px;
+    width:110px;
 }
 
 .hero{
-  position:relative;
-  width:100%;
-  height:400px;
-  overflow:hidden;
+    position:relative;
+    width:100%;
+    height:400px;
+    overflow:hidden;
 }
 
 .slide{
-  position:absolute;
-  width:100%;
-  height:100%;
-  background-size:cover;
-  background-position:center;
-  opacity:0;
-  transition:opacity 1s ease-in-out;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transition:1s;
 }
 
 .slide.active{
-  opacity:1;
+    opacity:1;
 }
 
 .slide1{
-  background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/Artboard%208.png');
+    background-image:url('images/banner1.png');
 }
 
 .slide2{
-  background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/2026.png');
+    background-image:url('images/banner2.png');
 }
 
 .slide3{
-  background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/VIP.png');
+    background-image:url('images/banner3.png');
 }
 
 .section{
-  padding:45px 20px 45px;
+    padding:45px 20px;
 }
 
 .section h2{
-  font-size:28px;
-  margin-bottom:35px;
+    font-size:32px;
+    margin-bottom:35px;
 }
 
 .icons{
-  display:flex;
-  justify-content:center;
-  gap:45px;
-  flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
 }
 
 .item{
-  text-decoration:none;
-  color:white;
-  font-weight:bold;
-  transition:0.3s;
-  cursor:pointer;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
 }
 
 .item:hover{
-  transform:scale(1.08);
+    transform:scale(1.08);
 }
 
 .icon-wrap{
-  width:74px;
-  height:74px;
-  border-radius:50%;
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:auto;
+    width:74px;
+    height:74px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    position:relative;
 }
 
 .icon-wrap::before{
-  content:"";
-  position:absolute;
-  inset:1px;
-  border-radius:50%;
-  border:2px solid rgba(255,255,255,0.8);
-  box-shadow:
-    0 0 5px rgba(255,255,255,0.65),
-    0 0 10px var(--glow-soft);
-  animation:pulseGlow 1.8s ease-in-out infinite;
-}
-
-.icon-wrap::after{
-  content:"";
-  position:absolute;
-  inset:-5px;
-  border-radius:50%;
-  box-shadow:
-    0 0 12px var(--glow-soft),
-    0 0 25px var(--glow-light),
-    0 0 40px var(--glow-faint);
-  opacity:0.45;
-  animation:pulseSpread 1.8s ease-in-out infinite;
+    content:"";
+    position:absolute;
+    inset:1px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,0.8);
 }
 
 .item img{
-  width:70px;
-  height:70px;
-  border-radius:50%;
-  border:2px solid rgba(255,255,255,0.65);
-  position:relative;
-  z-index:2;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    position:relative;
+    z-index:2;
 }
 
 .item p{
-  margin-top:12px;
-  font-size:15px;
+    margin-top:12px;
+    font-size:15px;
 }
 
-.sg{
-  --glow-soft:rgba(255,70,70,0.65);
-  --glow-light:rgba(255,70,70,0.35);
-  --glow-faint:rgba(255,70,70,0.18);
+.sg .icon-wrap{
+    box-shadow:0 0 18px rgba(255,0,0,0.7);
 }
 
-.my{
-  --glow-soft:rgba(255,210,60,0.65);
-  --glow-light:rgba(255,210,60,0.35);
-  --glow-faint:rgba(255,210,60,0.18);
+.my .icon-wrap{
+    box-shadow:0 0 18px rgba(255,200,0,0.7);
 }
 
-.fb{
-  --glow-soft:rgba(50,120,255,0.7);
-  --glow-light:rgba(50,120,255,0.4);
-  --glow-faint:rgba(50,120,255,0.2);
+.fb .icon-wrap{
+    box-shadow:0 0 18px rgba(0,100,255,0.7);
 }
 
-.tg{
-  --glow-soft:rgba(0,180,255,0.75);
-  --glow-light:rgba(0,180,255,0.45);
-  --glow-faint:rgba(0,180,255,0.22);
-}
-
-@keyframes pulseGlow{
-  0%,100%{
-    transform:scale(1);
-    opacity:0.65;
-  }
-
-  50%{
-    transform:scale(1.02);
-    opacity:0.9;
-  }
-}
-
-@keyframes pulseSpread{
-  0%,100%{
-    transform:scale(1);
-    opacity:0.35;
-  }
-
-  50%{
-    transform:scale(1.08);
-    opacity:0.6;
-  }
-}
-
-.item:hover .icon-wrap::before{
-  box-shadow:
-    0 0 8px rgba(255,255,255,1),
-    0 0 18px var(--glow-soft),
-    0 0 28px var(--glow-light);
-}
-
-.item:hover .icon-wrap::after{
-  opacity:0.9;
+.tg .icon-wrap{
+    box-shadow:0 0 18px rgba(0,180,255,0.7);
 }
 
 .usdt{
-  margin-top:40px;
-  font-size:16px;
+    margin-top:35px;
+    font-size:16px;
 }
 
-/* SEO CONTENT BELOW COUNTRY SECTION */
 .seo-content{
-  max-width:850px;
-  margin:0 auto 55px;
-  padding:0 20px;
+    max-width:850px;
+    margin:0 auto 55px;
+    padding:0 20px;
 }
 
 .seo-content h1{
-  font-size:28px;
-  color:#ff6200;
-  margin-bottom:12px;
+    font-size:30px;
+    color:#ff6200;
+    margin-bottom:15px;
 }
 
 .seo-content p{
-  color:#ccc;
-  font-size:15px;
-  line-height:1.6;
-  margin-bottom:10px;
+    color:#ccc;
+    line-height:1.7;
+    margin-bottom:12px;
 }
 
 .cta-box{
-  margin-top:18px;
-  padding:13px 15px;
-  border-radius:12px;
-  background:linear-gradient(135deg,#ff7a1a,#ff6200);
-  font-weight:bold;
-  color:#fff;
-  box-shadow:0 0 14px rgba(255,98,0,0.45);
+    margin-top:18px;
+    padding:14px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#ff7a1a,#ff6200);
+    font-weight:bold;
 }
 
-/* POPUP */
 .popup{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.82);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  z-index:9999;
-  padding:20px;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.85);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
 }
 
 .popup-box{
-  background:#222;
-  border:1px solid #ff6200;
-  box-shadow:0 0 25px rgba(255,98,0,0.4);
-  padding:25px 20px;
-  border-radius:16px;
-  width:320px;
-  max-width:90%;
-  max-height:420px;
-  overflow-y:auto;
-  text-align:center;
+    background:#222;
+    width:320px;
+    max-width:90%;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #ff6200;
 }
 
 .popup-box h3{
-  margin-bottom:18px;
-  color:#ff6200;
-  font-size:22px;
+    margin-bottom:20px;
+    color:#ff6200;
 }
 
 .popup-box a{
-  display:block;
-  margin:12px 0;
-  padding:12px;
-  background:linear-gradient(135deg,#ff7a1a,#ff6200);
-  color:#fff;
-  font-weight:bold;
-  text-decoration:none;
-  border-radius:8px;
-}
-
-.popup-box a:hover{
-  transform:scale(1.03);
-  box-shadow:0 0 12px rgba(255,98,0,0.55);
+    display:block;
+    background:#ff6200;
+    color:#fff;
+    text-decoration:none;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
 }
 
 .popup-box button{
-  margin-top:12px;
-  padding:10px 20px;
-  border:none;
-  background:#555;
-  color:#fff;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-.popup-box button:hover{
-  background:#777;
-}
-
-@media(max-width:1024px){
-  .hero{
-    height:320px;
-  }
+    margin-top:12px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#555;
+    color:#fff;
+    cursor:pointer;
 }
 
 @media(max-width:768px){
-  .logo img{
-    width:95px;
-  }
 
-  .hero{
-    height:260px;
-  }
+.hero{
+    height:240px;
+}
 
-  .slide1{
-    background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/Artboard%208%20mob.png');
-  }
-
-  .slide2{
-    background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/2026mobile.png');
-  }
-
-  .slide3{
-    background-image:url('https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/viponyx.png');
-  }
-
-  .section{
-    padding:35px 15px 35px;
-  }
-
-  .section h2{
-    font-size:24px;
-    margin-bottom:30px;
-  }
-
-  .icons{
+.icons{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:25px;
-    max-width:280px;
-    margin:auto;
-  }
-
-  .icon-wrap{
-    width:66px;
-    height:66px;
-  }
-
-  .item img{
-    width:62px;
-    height:62px;
-  }
-
-  .item p{
-    font-size:14px;
-  }
-
-  .usdt{
-    font-size:14px;
-    margin-top:32px;
-  }
-
-  .seo-content{
-    margin-bottom:45px;
-  }
-
-  .seo-content h1{
-    font-size:23px;
-  }
-
-  .seo-content p{
-    font-size:14px;
-  }
-}
-
-@media(max-width:480px){
-  .hero{
-    height:220px;
-  }
-
-  .icons{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:28px 25px;
     max-width:300px;
-    margin:0 auto;
-  }
+    margin:auto;
 }
+
+.section h2{
+    font-size:26px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="logo">
-  <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyxlogo/logo.png" alt="Onyx2play Official Logo">
+    <img src="images/logo.png" alt="Onyx2play">
 </div>
 
 <div class="hero">
-  <div class="slide slide1 active"></div>
-  <div class="slide slide2"></div>
-  <div class="slide slide3"></div>
+
+    <div class="slide slide1 active"></div>
+    <div class="slide slide2"></div>
+    <div class="slide slide3"></div>
+
 </div>
 
 <div class="section">
-  <h2>Select Your Country</h2>
 
-  <div class="icons">
+    <h2>Select Your Country</h2>
 
-    <div class="item sg" onclick="showBackup('SG')">
-      <div class="icon-wrap">
-        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/sg.png" alt="Singapore">
-      </div>
-      <p>Singapore</p>
+    <div class="icons">
+
+        <div class="item sg" onclick="showBackup('SG')">
+            <div class="icon-wrap">
+                <img src="images/sg.png" alt="Singapore">
+            </div>
+            <p>Singapore</p>
+        </div>
+
+        <div class="item my" onclick="showBackup('MY')">
+            <div class="icon-wrap">
+                <img src="images/malaysia.png" alt="Malaysia">
+            </div>
+            <p>Malaysia</p>
+        </div>
+
+        <a class="item fb" href="https://facebook.com" target="_blank">
+            <div class="icon-wrap">
+                <img src="images/facebook.png" alt="Facebook">
+            </div>
+            <p>Facebook</p>
+        </a>
+
+        <a class="item tg" href="https://t.me/o2play4k" target="_blank">
+            <div class="icon-wrap">
+                <img src="images/telegram.png" alt="Telegram">
+            </div>
+            <p>Telegram</p>
+        </a>
+
     </div>
 
-    <div class="item my" onclick="showBackup('MY')">
-      <div class="icon-wrap">
-        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/malaysia.png" alt="Malaysia">
-      </div>
-      <p>Malaysia</p>
+    <div class="usdt">
+        We accept <b>USDT</b> for transactions 💎
     </div>
 
-    <a class="item fb" href="https://www.facebook.com/o2psg" target="_blank" rel="noopener noreferrer">
-      <div class="icon-wrap">
-        <img src="https://69e74c2e19995cfcc32b1c2f.imgix.net/onyx2play/facebook.png" alt="Facebook">
-      </div>
-      <p>Facebook</p>
-    </a>
-
-    <a class="item tg" href="https://t.me/o2play4k" target="_blank" rel="noopener noreferrer">
-      <div class="icon-wrap">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-      </div>
-      <p>Telegram</p>
-    </a>
-
-  </div>
-
-  <div class="usdt">
-    We accept <b>USDT</b> for transactions 💎
-  </div>
 </div>
 
 <div class="seo-content">
-  <h1>Onyx2play Malaysia & Singapore Official Access</h1>
 
-  <p>
-    Onyx2play provides a secure online gaming experience for Malaysia and Singapore players,
-    including sportsbook, live casino, slots and racing entertainment.
-  </p>
+    <h1>Onyx2play Malaysia & Singapore Official Access</h1>
 
-  <p>
-    Select your country above to access the latest available links.
-    You may also contact our official Facebook or Telegram for assistance and platform updates.
-  </p>
+    <p>
+        Onyx2play provides a secure online gaming experience for Malaysia and Singapore players.
+    </p>
 
-  <div class="cta-box">
-    🔥 Fast access available — choose your country to continue
-  </div>
+    <p>
+        Select your country above to access the latest available links.
+    </p>
+
+    <div class="cta-box">
+        🔥 Fast access available — choose your country to continue
+    </div>
+
 </div>
 
 <div class="popup" id="popup" onclick="closePopupOutside(event)">
-  <div class="popup-box" id="popupContent"></div>
+    <div class="popup-box" id="popupContent"></div>
 </div>
 
 <script>
+
 let slides = document.querySelectorAll('.slide');
 let i = 0;
 
 setInterval(() => {
-  slides[i].classList.remove('active');
-  i = (i + 1) % slides.length;
-  slides[i].classList.add('active');
-}, 3000);
 
+    slides[i].classList.remove('active');
 
-/* 这里换成你的真实备用链接 */
+    i = (i + 1) % slides.length;
+
+    slides[i].classList.add('active');
+
+},3000);
+
 const backups = {
-  SG: [
-    "http://onyx2wow.com",
-    "http://onyx2gem.com",
-    "http://onyx2boom.com",
-    "http://onyx2me.com",
-    "http://onyx2we.com",
-    "http://onyx2bk.com"
-  ],
 
-  MY: [
-    "http://onyx2jom.com",
-    "http://onyx2bola.com",
-    "http://onyx2boleh.com"
-  ]
+    SG:[
+        "http://onyx2wow.com",
+        "http://onyx2gem.com",
+        "http://onyx2boom.com"
+    ],
+
+    MY:[
+        "http://onyx2jom.com",
+        "http://onyx2bola.com",
+        "http://onyx2boleh.com"
+    ]
+
 };
 
 function showBackup(country){
-  let list = backups[country];
 
-  let countryName = country === "SG" ? "Singapore" : "Malaysia";
+    let list = backups[country];
 
-  let html = `<h3>${countryName} Backup Links</h3>`;
+    let countryName = country === "SG"
+    ? "Singapore"
+    : "Malaysia";
 
-  list.forEach((url, index) => {
-    html += `<a href="${url}" target="_blank" rel="noopener noreferrer">Line ${index + 1}</a>`;
-  });
+    let html = `<h3>${countryName} Backup Links</h3>`;
 
-  html += `<button onclick="closePopup()">Close</button>`;
+    list.forEach((url,index)=>{
 
-  document.getElementById("popupContent").innerHTML = html;
-  document.getElementById("popup").style.display = "flex";
+        html += `
+        <a href="${url}" target="_blank">
+            Line ${index+1}
+        </a>
+        `;
+
+    });
+
+    html += `<button onclick="closePopup()">Close</button>`;
+
+    document.getElementById("popupContent").innerHTML = html;
+
+    document.getElementById("popup").style.display = "flex";
+
 }
 
 function closePopup(){
-  document.getElementById("popup").style.display = "none";
+
+    document.getElementById("popup").style.display = "none";
+
 }
 
 function closePopupOutside(event){
-  if(event.target.id === "popup"){
-    closePopup();
-  }
+
+    if(event.target.id === "popup"){
+
+        closePopup();
+
+    }
+
 }
+
 </script>
-
-</body>
-</html>
-
 
 </body>
 </html>
