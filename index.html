@@ -3,400 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Onyx2play Official Access | Malaysia & Singapore Online Gaming</title>
-
-<meta name="description" content="Onyx2play official access page for Malaysia and Singapore players.">
-<meta name="keywords" content="Onyx2play, Malaysia, Singapore, sportsbook, casino">
-
-<link rel="canonical" href="https://onyx2playregister.github.io/onyx-landing/">
-
-<link rel="icon" href="images/logo.png">
+<title>Onyx2play Official Access</title>
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#1b1b1b;color:#fff;text-align:center}
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+.logo{background:#000;padding:8px 0}
+.logo img{width:110px}
 
-body{
-    background:#1b1b1b;
-    color:#fff;
-    text-align:center;
-}
+.hero{position:relative;width:100%;height:400px;overflow:hidden}
+.slide{position:absolute;width:100%;height:100%;background-size:cover;background-position:center;opacity:0;transition:opacity 1s ease-in-out}
+.slide.active{opacity:1}
 
-.logo{
-    background:#000;
-    padding:10px 0;
-}
+.slide1{background-image:url('images/banner1-web.png')}
+.slide2{background-image:url('images/banner2-web.png')}
+.slide3{background-image:url('images/banner3-web.png')}
+.slide4{background-image:url('images/banner4-web.png')}
 
-.logo img{
-    width:110px;
-}
+.section{padding:45px 20px}
+.section h2{font-size:28px;margin-bottom:35px}
 
-.hero{
-    position:relative;
-    width:100%;
-    height:400px;
-    overflow:hidden;
-}
-
-.slide{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background-size:cover;
-    background-position:center;
-    opacity:0;
-    transition:1s;
-}
-
-.slide.active{
-    opacity:1;
-}
-
-.slide1{
-    background-image:url('images/banner1.png');
-}
-
-.slide2{
-    background-image:url('images/banner2.png');
-}
-
-.slide3{
-    background-image:url('images/banner3.png');
-}
-
-.section{
-    padding:45px 20px;
-}
-
-.section h2{
-    font-size:32px;
-    margin-bottom:35px;
-}
-
-.icons{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-.item{
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.item:hover{
-    transform:scale(1.08);
-}
+.icons{display:flex;justify-content:center;gap:45px;flex-wrap:wrap}
+.item{text-decoration:none;color:white;font-weight:bold;transition:.3s;cursor:pointer}
+.item:hover{transform:scale(1.08)}
 
 .icon-wrap{
-    width:74px;
-    height:74px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:auto;
-    position:relative;
+  width:74px;height:74px;border-radius:50%;
+  position:relative;display:flex;align-items:center;justify-content:center;margin:auto;
 }
 
 .icon-wrap::before{
-    content:"";
-    position:absolute;
-    inset:1px;
-    border-radius:50%;
-    border:2px solid rgba(255,255,255,0.8);
+  content:"";position:absolute;inset:1px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.8);
+  box-shadow:0 0 5px rgba(255,255,255,.65),0 0 10px var(--glow-soft);
+  animation:pulseGlow 1.8s ease-in-out infinite;
+}
+
+.icon-wrap::after{
+  content:"";position:absolute;inset:-5px;border-radius:50%;
+  box-shadow:0 0 12px var(--glow-soft),0 0 25px var(--glow-light),0 0 40px var(--glow-faint);
+  opacity:.45;animation:pulseSpread 1.8s ease-in-out infinite;
 }
 
 .item img{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    object-fit:cover;
-    position:relative;
-    z-index:2;
+  width:70px;height:70px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.65);
+  position:relative;z-index:2;object-fit:cover;
 }
 
-.item p{
-    margin-top:12px;
-    font-size:15px;
+.item p{margin-top:12px;font-size:15px}
+
+.sg{--glow-soft:rgba(255,70,70,.65);--glow-light:rgba(255,70,70,.35);--glow-faint:rgba(255,70,70,.18)}
+.my{--glow-soft:rgba(255,210,60,.65);--glow-light:rgba(255,210,60,.35);--glow-faint:rgba(255,210,60,.18)}
+.fb{--glow-soft:rgba(50,120,255,.7);--glow-light:rgba(50,120,255,.4);--glow-faint:rgba(50,120,255,.2)}
+.tg{--glow-soft:rgba(0,180,255,.75);--glow-light:rgba(0,180,255,.45);--glow-faint:rgba(0,180,255,.22)}
+
+@keyframes pulseGlow{
+  0%,100%{transform:scale(1);opacity:.65}
+  50%{transform:scale(1.02);opacity:.9}
+}
+@keyframes pulseSpread{
+  0%,100%{transform:scale(1);opacity:.35}
+  50%{transform:scale(1.08);opacity:.6}
 }
 
-.sg .icon-wrap{
-    box-shadow:0 0 18px rgba(255,0,0,0.7);
-}
+.usdt{margin-top:40px;font-size:16px}
 
-.my .icon-wrap{
-    box-shadow:0 0 18px rgba(255,200,0,0.7);
-}
-
-.fb .icon-wrap{
-    box-shadow:0 0 18px rgba(0,100,255,0.7);
-}
-
-.tg .icon-wrap{
-    box-shadow:0 0 18px rgba(0,180,255,0.7);
-}
-
-.usdt{
-    margin-top:35px;
-    font-size:16px;
-}
-
-.seo-content{
-    max-width:850px;
-    margin:0 auto 55px;
-    padding:0 20px;
-}
-
-.seo-content h1{
-    font-size:30px;
-    color:#ff6200;
-    margin-bottom:15px;
-}
-
-.seo-content p{
-    color:#ccc;
-    line-height:1.7;
-    margin-bottom:12px;
-}
+.seo-content{max-width:850px;margin:0 auto 55px;padding:0 20px}
+.seo-content h1{font-size:28px;color:#ff6200;margin-bottom:12px}
+.seo-content p{color:#ccc;font-size:15px;line-height:1.6;margin-bottom:10px}
 
 .cta-box{
-    margin-top:18px;
-    padding:14px;
-    border-radius:12px;
-    background:linear-gradient(135deg,#ff7a1a,#ff6200);
-    font-weight:bold;
+  margin-top:18px;padding:13px 15px;border-radius:12px;
+  background:linear-gradient(135deg,#ff7a1a,#ff6200);
+  font-weight:bold;color:#fff;box-shadow:0 0 14px rgba(255,98,0,.45)
 }
 
 .popup{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.85);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
+  position:fixed;inset:0;background:rgba(0,0,0,.82);
+  display:none;align-items:center;justify-content:center;z-index:9999;padding:20px
 }
 
 .popup-box{
-    background:#222;
-    width:320px;
-    max-width:90%;
-    padding:25px;
-    border-radius:14px;
-    border:1px solid #ff6200;
+  background:#222;border:1px solid #ff6200;
+  box-shadow:0 0 25px rgba(255,98,0,.4);
+  padding:25px 20px;border-radius:16px;width:320px;max-width:90%;text-align:center
 }
 
-.popup-box h3{
-    margin-bottom:20px;
-    color:#ff6200;
-}
-
+.popup-box h3{margin-bottom:18px;color:#ff6200;font-size:22px}
 .popup-box a{
-    display:block;
-    background:#ff6200;
-    color:#fff;
-    text-decoration:none;
-    padding:12px;
-    margin:10px 0;
-    border-radius:8px;
+  display:block;margin:12px 0;padding:12px;
+  background:linear-gradient(135deg,#ff7a1a,#ff6200);
+  color:#fff;font-weight:bold;text-decoration:none;border-radius:8px
 }
-
 .popup-box button{
-    margin-top:12px;
-    padding:10px 20px;
-    border:none;
-    border-radius:8px;
-    background:#555;
-    color:#fff;
-    cursor:pointer;
+  margin-top:12px;padding:10px 20px;border:none;background:#555;
+  color:#fff;border-radius:8px;cursor:pointer
 }
 
 @media(max-width:768px){
+  .logo img{width:95px}
+  .hero{height:260px}
 
-.hero{
-    height:240px;
-}
+  .slide1{background-image:url('images/banner1-mobile.png')}
+  .slide2{background-image:url('images/banner2-mobile.png')}
+  .slide3{background-image:url('images/banner3-mobile.png')}
+  .slide4{background-image:url('images/banner4-mobile.png')}
 
-.icons{
+  .section{padding:35px 15px}
+  .section h2{font-size:24px;margin-bottom:30px}
+
+  .icons{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:25px;
-    max-width:300px;
+    max-width:280px;
     margin:auto;
+  }
+
+  .icon-wrap{width:66px;height:66px}
+  .item img{width:62px;height:62px}
+  .item p{font-size:14px}
 }
 
-.section h2{
-    font-size:26px;
+@media(max-width:480px){
+  .hero{height:220px}
 }
-
-}
-
 </style>
 </head>
 
 <body>
 
 <div class="logo">
-    <img src="images/logo.png" alt="Onyx2play">
+  <img src="images/logo.png" alt="Onyx2play Logo">
 </div>
 
 <div class="hero">
-
-    <div class="slide slide1 active"></div>
-    <div class="slide slide2"></div>
-    <div class="slide slide3"></div>
-
+  <div class="slide slide1 active"></div>
+  <div class="slide slide2"></div>
+  <div class="slide slide3"></div>
+  <div class="slide slide4"></div>
 </div>
 
 <div class="section">
+  <h2>Select Your Country</h2>
 
-    <h2>Select Your Country</h2>
-
-    <div class="icons">
-
-        <div class="item sg" onclick="showBackup('SG')">
-            <div class="icon-wrap">
-                <img src="images/sg.png" alt="Singapore">
-            </div>
-            <p>Singapore</p>
-        </div>
-
-        <div class="item my" onclick="showBackup('MY')">
-            <div class="icon-wrap">
-                <img src="images/malaysia.png" alt="Malaysia">
-            </div>
-            <p>Malaysia</p>
-        </div>
-
-        <a class="item fb" href="https://facebook.com" target="_blank">
-            <div class="icon-wrap">
-                <img src="images/facebook.png" alt="Facebook">
-            </div>
-            <p>Facebook</p>
-        </a>
-
-        <a class="item tg" href="https://t.me/o2play4k" target="_blank">
-            <div class="icon-wrap">
-                <img src="images/telegram.png" alt="Telegram">
-            </div>
-            <p>Telegram</p>
-        </a>
-
+  <div class="icons">
+    <div class="item sg" onclick="showBackup('SG')">
+      <div class="icon-wrap">
+        <img src="images/sg.png" alt="Singapore">
+      </div>
+      <p>Singapore</p>
     </div>
 
-    <div class="usdt">
-        We accept <b>USDT</b> for transactions 💎
+    <div class="item my" onclick="showBackup('MY')">
+      <div class="icon-wrap">
+        <img src="images/malaysia.png" alt="Malaysia">
+      </div>
+      <p>Malaysia</p>
     </div>
 
+    <a class="item fb" href="https://www.facebook.com/o2psg" target="_blank">
+      <div class="icon-wrap">
+        <img src="images/facebook.png" alt="Facebook">
+      </div>
+      <p>Facebook</p>
+    </a>
+
+    <a class="item tg" href="https://t.me/o2play4k" target="_blank">
+      <div class="icon-wrap">
+        <img src="images/telegram.png" alt="Telegram">
+      </div>
+      <p>Telegram</p>
+    </a>
+  </div>
+
+  <div class="usdt">
+    We accept <b>USDT</b> for transactions 💎
+  </div>
 </div>
 
 <div class="seo-content">
-
-    <h1>Onyx2play Malaysia & Singapore Official Access</h1>
-
-    <p>
-        Onyx2play provides a secure online gaming experience for Malaysia and Singapore players.
-    </p>
-
-    <p>
-        Select your country above to access the latest available links.
-    </p>
-
-    <div class="cta-box">
-        🔥 Fast access available — choose your country to continue
-    </div>
-
+  <h1>Onyx2play Malaysia & Singapore Official Access</h1>
+  <p>Onyx2play provides a secure online gaming experience for Malaysia and Singapore players, including sportsbook, live casino, slots and racing entertainment.</p>
+  <p>Select your country above to access the latest available links. You may also contact our official Facebook or Telegram for assistance and platform updates.</p>
+  <div class="cta-box">🔥 Fast access available — choose your country to continue</div>
 </div>
 
 <div class="popup" id="popup" onclick="closePopupOutside(event)">
-    <div class="popup-box" id="popupContent"></div>
+  <div class="popup-box" id="popupContent"></div>
 </div>
 
 <script>
-
 let slides = document.querySelectorAll('.slide');
 let i = 0;
 
 setInterval(() => {
-
-    slides[i].classList.remove('active');
-
-    i = (i + 1) % slides.length;
-
-    slides[i].classList.add('active');
-
-},3000);
+  slides[i].classList.remove('active');
+  i = (i + 1) % slides.length;
+  slides[i].classList.add('active');
+}, 3000);
 
 const backups = {
-
-    SG:[
-        "http://onyx2wow.com",
-        "http://onyx2gem.com",
-        "http://onyx2boom.com"
-    ],
-
-    MY:[
-        "http://onyx2jom.com",
-        "http://onyx2bola.com",
-        "http://onyx2boleh.com"
-    ]
-
+  SG: [
+    "http://onyx2wow.com",
+    "http://onyx2gem.com",
+    "http://onyx2boom.com",
+    "http://onyx2me.com",
+    "http://onyx2we.com",
+    "http://onyx2bk.com"
+  ],
+  MY: [
+    "http://onyx2jom.com",
+    "http://onyx2bola.com",
+    "http://onyx2boleh.com"
+  ]
 };
 
 function showBackup(country){
+  let list = backups[country];
+  let countryName = country === "SG" ? "Singapore" : "Malaysia";
+  let html = `<h3>${countryName} Backup Links</h3>`;
 
-    let list = backups[country];
+  list.forEach((url, index) => {
+    html += `<a href="${url}" target="_blank">Line ${index + 1}</a>`;
+  });
 
-    let countryName = country === "SG"
-    ? "Singapore"
-    : "Malaysia";
-
-    let html = `<h3>${countryName} Backup Links</h3>`;
-
-    list.forEach((url,index)=>{
-
-        html += `
-        <a href="${url}" target="_blank">
-            Line ${index+1}
-        </a>
-        `;
-
-    });
-
-    html += `<button onclick="closePopup()">Close</button>`;
-
-    document.getElementById("popupContent").innerHTML = html;
-
-    document.getElementById("popup").style.display = "flex";
-
+  html += `<button onclick="closePopup()">Close</button>`;
+  document.getElementById("popupContent").innerHTML = html;
+  document.getElementById("popup").style.display = "flex";
 }
 
 function closePopup(){
-
-    document.getElementById("popup").style.display = "none";
-
+  document.getElementById("popup").style.display = "none";
 }
 
 function closePopupOutside(event){
-
-    if(event.target.id === "popup"){
-
-        closePopup();
-
-    }
-
+  if(event.target.id === "popup"){
+    closePopup();
+  }
 }
-
 </script>
 
 </body>
